@@ -49,11 +49,22 @@
                     </p>
                 </div>
                 <div class="email-div">
-                    <input type="email" placeholder="Enter your email…">
-                    <button>
+                    <div class="input-container">
+                        <input id="email-input" type="email" placeholder="Enter your email…">
+                        <div class="error-div">
+                            <p class="error-p">
+                                your email is wrong!
+                            </p>
+                            <p class="success-p">
+                                your email has been recieved
+                            </p>
+                        </div>
+                    </div>
+                    <button id="submit-email">
                         Get Started
                     </button>
                 </div>
+
             </div>
         </section>
 
@@ -149,8 +160,18 @@
                     </p>
                 </div>
                 <div class="email-example">
-                    <input type="email" placeholder="email@example.com">
-                    <button>
+                    <div class="input-container">
+                    <input id="email-input1" type="email" placeholder="email@example.com">
+                    <div id="error-div1">
+                        <p class="error-p">
+                            please check your email
+                        </p>
+                        <p class="success-p">
+                            your email has been recieved
+                        </p>
+                    </div>
+                    </div>
+                    <button id="submit-email1">
                         Get Started For Free
                     </button>
                 </div>
@@ -221,6 +242,7 @@
             </div>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>

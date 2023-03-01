@@ -6,13 +6,15 @@
     --dark-blue:#07043B;
     --white:#FFFFFF;
     --light-purple:#615F7E;
-    --green:#3DA08F;
+    --dark-green:#3DA08F;
     --grey:#F8F8FE;
     --dark-grey:#C2C2C2;
     --purple:#575988;
     --blue:#2F65F8;
     --light-blue:#6C9BFF;
     --worn-out-blue:#71DFCC;
+    --red:#FF0000;
+    --green:#00FF00;
 }
 
 body{
@@ -127,12 +129,48 @@ main{
     gap:16px;
 }
 
+.success{
+    border:1px solid var(--green);
+}
+
+.error{
+    border:1px solid var(--red);
+}
+
+.input-container{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.error-p{
+    display: none;
+    color:var(--red);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.40000003576278687px;
+    text-align: left;
+}
+
+.success-p{
+    display: none;
+    color: var(--green);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.40000003576278687px;
+    text-align: left;
+}
+
 .email-div input{
     width:304px;
     height:40px;
     padding:14px 0 12px 21px;
     border-radius: 3.13px;
-    border: 0.63px solid var(--dark-blue);
+    /* border: 0.63px solid var(--dark-blue); */
 }
 
 .email-div input::placeholder{
@@ -356,11 +394,47 @@ main{
   width:240px;
   height:32px;
   padding:11px 0 9px 8px;
-  border:none;
   border-radius: 1.47px;
   box-shadow: 1px 1px 3px rgba(7, 4, 59, 0.157043);
 }
 
+.input-container1{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.success1{
+    border:1px solid var(--green);
+}
+
+.error1{
+    border:1px solid var(--red);
+}
+
+.error-p1{
+    display: none;
+    color:var(--white);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.40000003576278687px;
+    text-align: left;
+
+
+}
+
+.success-p1{
+    display: none;
+    color: var(--green);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.40000003576278687px;
+    text-align: left;
+}
 
 .email-example input::placeholder{
     font-family: 'Raleway', sans-serif;
@@ -503,6 +577,10 @@ ul{
     list-style-type: none;
 }
 
+.success{
+    border-color:1px solid green;
+}
+
 
 
 
@@ -626,7 +704,7 @@ ul{
         height:45px;
         padding:14px 0 12px 21px;
         border-radius: 3.13px;
-        border: 0.63px solid var(--dark-blue);
+        /* border: 0.63px solid var(--dark-blue); */
     }
 
     .email-div button{
@@ -722,7 +800,7 @@ ul{
 
     .fylo-works{
         font-family:'Open Sans', sans-serif; 
-        color:var(--green);
+        color:var(--dark-green);
         font-size: 16px;
         font-weight: 400;
         letter-spacing: 0px;
@@ -858,7 +936,6 @@ ul{
         width:480px;
         height:48px;
         padding:16px 0 18px 22px;
-        border:none;
         border-radius: 1.47px;
         box-shadow: 1px 1px 3px rgba(7, 4, 59, 0.157043);
     }
