@@ -13,14 +13,12 @@ let mailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 function testMail(input, errorParam){
 
     if(mailRegex.test(input.value)){
-        console.log(error.firstElementChild);
         input.classList.add('success');
         input.classList.remove('error');
         errorParam.firstElementChild.style.display = "none";
         errorParam.lastElementChild.style.display = "block"; 
 
     } else if(!mailRegex.test(input.value)){
-        console.log('this is false');
         input.classList.add('error');
         input.classList.remove('success');
         errorParam.firstElementChild.style.display = "block";
@@ -32,12 +30,10 @@ function testMail(input, errorParam){
 buttonSubmit.addEventListener('click', (event)=> {
     event.preventDefault()
     testMail(email, error);
-    console.log("clicked");
 })
 
 
 buttonSubmit1.addEventListener('click', (event)=> {
     event.preventDefault()
     testMail(email1, error1);
-    console.log("clicked");
 })
